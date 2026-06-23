@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qiskit-quantum-workflow-starter"
+version = "0.1.0"
+description = "A reproducible starter for local Qiskit simulation, validation, and reporting."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+authors = [{name = "qiskit-quantum-workflow-starter contributors"}]
+dependencies = [
+  "qiskit>=2.0,<3",
+  "qiskit-aer>=0.17",
+  "matplotlib>=3.8",
+  "pylatexenc>=2.10",
+]
+
+[project.scripts]
+qiskit-workflow = "qiskit_quantum_workflow_starter.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]

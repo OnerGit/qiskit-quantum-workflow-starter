@@ -3,6 +3,7 @@ __pycache__/
 *.pyc
 .pytest_cache/
 .ruff_cache/
+.matplotlib/
 .ipynb_checkpoints/
 .env
 .env.*
@@ -10,5 +11,6 @@ __pycache__/
 build/
 dist/
 *.egg-info/
+validation_*.txt
 .DS_Store
 Thumbs.db

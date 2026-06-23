@@ -1,0 +1,67 @@
+{
+  "backend": "AerSimulator (local)",
+  "counts_file_path": {
+    "bell": "sample_outputs/bell_counts.json",
+    "ghz": "sample_outputs/ghz_counts.json",
+    "grover": "sample_outputs/grover_counts.json"
+  },
+  "demos": {
+    "bell": {
+      "counts": {
+        "00": 521,
+        "11": 503
+      },
+      "description": "Two-qubit Bell-state correlation demo",
+      "validation": {
+        "balance_difference": 0.017578125,
+        "dominant_probability": 1.0,
+        "rule": "P(00)+P(11)>=0.90 and abs(P(00)-P(11))<=0.20",
+        "shots": 1024,
+        "valid": true
+      }
+    },
+    "ghz": {
+      "counts": {
+        "000": 490,
+        "111": 534
+      },
+      "description": "Three-qubit GHZ correlation demo",
+      "validation": {
+        "balance_difference": 0.04296875,
+        "dominant_probability": 1.0,
+        "rule": "P(000)+P(111)>=0.90 and abs(P(000)-P(111))<=0.20",
+        "shots": 1024,
+        "states": [
+          "000",
+          "111"
+        ],
+        "valid": true
+      }
+    },
+    "grover": {
+      "bitstring_order": "q1q0",
+      "counts": {
+        "11": 1024
+      },
+      "description": "Two-qubit educational Grover search toy",
+      "marked_state": "11",
+      "validation": {
+        "highest_count_state": "11",
+        "marked_probability": 1.0,
+        "marked_state": "11",
+        "rule": "P(marked_state)>=0.40 and marked_state is the highest-count state",
+        "shots": 1024,
+        "valid": true
+      }
+    }
+  },
+  "ibm_token_required": false,
+  "limitations_summary": "Small educational circuits on an ideal local simulator; no hardware, noise model, error mitigation, or quantum advantage claim.",
+  "no_hardware_backend_used": true,
+  "project": "qiskit-quantum-workflow-starter",
+  "seed_simulator": 42,
+  "shots": 1024,
+  "timestamp": "2026-06-23T07:16:09.846478+00:00",
+  "validation_status": "passed",
+  "version": "0.1.0"
+}
