@@ -114,7 +114,7 @@ Circuit images can be generated with:
 python scripts/export_circuit_images.py
 ```
 
-Terminal, test, and report-preview screenshots must be captured manually. See
+This repository includes generated circuit images and manually captured terminal, pytest, and report-preview screenshots. See
 [screenshots/README.md](screenshots/README.md) for the public-safety checklist.
 
 ## Limitations
