@@ -134,12 +134,6 @@ noise model, no error mitigation, and no hardware execution. See
 IBM Quantum backend execution is optional future work and is deliberately not
 implemented in v0.1.
 
-## Portfolio usage
-
-The repository is designed to be safe to present on GitHub, Upwork, or Dev.to.
-Generated outputs identify the local simulator and explicitly record that no
-hardware backend or IBM credential was used.
-
 ## License
 
 Licensed under the Apache License 2.0. See [LICENSE](LICENSE) and
