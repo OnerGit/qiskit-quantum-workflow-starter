@@ -1,11 +1,10 @@
 # Qiskit Quantum Workflow Starter
 
-A small, reproducible Qiskit workflow starter for local quantum circuit
-simulation, validation, reporting, and portfolio demonstration.
+A small, reproducible Qiskit workflow starter for local quantum circuit simulation, validation, and reporting.
 
 ## Project positioning
 
-This is an educational and portfolio-oriented Qiskit workflow starter. Version
+This is an educational Qiskit workflow starter focused on reproducible local simulation, validation, and reporting. Version
 0.1 focuses on readable engineering practices around small local simulations:
 deterministic configuration, probability-tolerant validation, tests, command
 line usage, and public-safe JSON and Markdown outputs.
