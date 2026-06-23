@@ -8,13 +8,8 @@ The generated circuit images are:
 
 Run `python scripts/export_circuit_images.py` to create them.
 
-The following images require manual capture and are intentionally not fabricated
-by the project:
+This repository includes manually captured terminal, pytest, and report-preview screenshots:
 
 - `terminal_run_all_demos.png` — successful demo execution
 - `pytest_passed.png` — passing test suite
 - `report_preview.png` — rendered Markdown report
-
-Before adding any screenshot, verify that it contains no tokens, IBM account
-details, private credentials, shell history, or unrelated personal data. After
-that review, the images are suitable for GitHub, Upwork, or Dev.to.
